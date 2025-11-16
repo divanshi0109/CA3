@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Crust and Co - Pizza Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-left">
+                <li class="logo-item"><a href="#home" class="logo-link"><img src="assets/logo.png" alt="Crust & Co" class="nav-logo"></a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+            
+            <ul class="nav-right">
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#contact">Contact &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#phone">Phone</a></li>
+                        <li><a href="#email">Email</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </li>
+                <li class="burger-toggle"><a href="#" id="burger-btn">&#9776;</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#phone">Phone</a>
+            <a href="#email">Email</a>
+            <a href="#location">Location</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-image-bg">
+            <img src="assets/herosection.JPG" alt="Delicious Pizza">
+        </div>
+        <div class="hero-content">
+            <h1>FOR DELICIOUS<br>MADE-FROM-SCRATCH<br>PIZZAS</h1>
+            <p>Served in an casually, casual setting</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Order Online</a>
+                <a href="#contact" class="btn btn-secondary">View Locations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Menu Section -->
+    <section class="our-menu" id="menu">
+        <div class="menu-header">
+            <h2>Our Menu</h2>
+            <p class="menu-subtitle">Handcrafted dishes made with love</p>
+        </div>
+        
+        <div class="menu-items">
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="Pizza">
+                    <div class="card-overlay">
+                        <a href="#order" class="order-btn-modern">Order Now</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Artisan Pizza</h3>
+                    <p>Wood-fired perfection with premium toppings</p>
+                    <span class="price">₹849</span>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop" alt="Pasta">
+                    <div class="card-overlay">
+                        <a href="#order" class="order-btn-modern">Order Now</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Signature Pasta</h3>
+                    <p>Handmade pasta with authentic Italian sauce</p>
+                    <span class="price">₹699</span>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1573140401552-3fab0b24306f?w=400&h=300&fit=crop" alt="Garlic Bread">
+                    <div class="card-overlay">
+                        <a href="#order" class="order-btn-modern">Order Now</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Pull-Apart Garlic Bread</h3>
+                    <p>Buttery, cheesy pull-apart perfection</p>
+                    <span class="price">₹549</span>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop" alt="Tiramisu">
+                    <div class="card-overlay">
+                        <a href="#order" class="order-btn-modern">Order Now</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian dessert with coffee & cream</p>
+                    <span class="price">₹499</span>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Beverages">
+                    <div class="card-overlay">
+                        <a href="#order" class="order-btn-modern">Order Now</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Beverages</h3>
+                    <p>Refreshing drinks and specialty coffees</p>
+                    <span class="price">₹299</span>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#full-menu" class="view-menu-btn">Explore Full Menu</a>
+    </section>
+
+    <!-- Chicago Style Section -->
+    <section class="chicago-style" id="about">
+        <div class="chicago-content">
+            <span class="badge">Since 1995</span>
+            <h2>Delhi's Original<br>Artisan Pizza Makers</h2>
+            <p>For over three decades, we've been crafting authentic wood-fired pizzas<br>in the heart of Delhi. Our legacy of quality and tradition makes us<br>the city's most trusted name in artisan pizza.</p>
+            
+            <div class="chicago-buttons">
+                <a href="#order" class="btn btn-primary">Order Online &#10148;</a>
+                <a href="#locations" class="btn btn-secondary">Find Store &#10148;</a>
+            </div>
+        </div>
+        
+        <div class="chicago-images">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=300&fit=crop" alt="Chef" class="polaroid">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="Pizza Making" class="polaroid">
+        </div>
+    </section>
+
+   
+
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="social-content">
+            <h3>From Our Kitchen</h3>
+
+            <div class="today-special">
+                <div class="today-left">
+                    <span class="today-pill">Today's Special</span>
+                    <h4 class="today-head">Margherita Classic</h4>
+                    <p class="today-desc">Wood-fired Neapolitan with fresh basil, San Marzano tomatoes & buffalo mozzarella.</p>
+
+                    <div class="today-cta">
+                        <a href="#order" class="btn btn-primary deal-btn">Order Now &#8377;499</a>
+                        <a href="#menu" class="btn btn-secondary">View Menu</a>
+                    </div>
+
+                    <p class="today-note">Limited time — available today only. While supplies last.</p>
+                </div>
+
+                <div class="today-right">
+                    <img src="assets/pizza-image.png" alt="Today's Special Pizza">
+                </div>
+            </div>
+        </div>
+
+        <!-- removed community block as requested -->
+    </section>
+
+    <!-- Franchise Section -->
+    <section class="franchise">
+        <div class="franchise-content">
+            <h2>Want to Own an Your Own<br>Crust & Co?</h2>
+            <a href="#inquire" class="btn btn-primary">Inquire About Franchising</a>
+        </div>
+        <div class="franchise-logo">
+            <img src="assets/logo.png" alt="Crust & Co.">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-inner">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <p class="contact-tagline">Drop by, call, or send us a message.</p>
+
+                <h3>Visit Us</h3>
+                <p id="location" class="contact-address">123 Shop, Galleria Market, DLF Phase 4, Gurgaon</p>
+
+                <p id="phone" class="contact-line"><strong>Phone:</strong> +91 12121 12121</p>
+                <p id="email" class="contact-line"><strong>Email:</strong> contact@crustandco.com</p>
+
+                <h4 class="hours-head">Hours:</h4>
+                <p class="hours-text">Mon–Fri: 11:30–22:00<br>Sat–Sun: 10:30–23:00</p>
+
+                
+            </div>
+            <div class="contact-right">
+                <h3>Send a Message</h3>
+                <form class="contact-form" action="#" method="post">
+                    <label for="cf-name">Name</label>
+                    <input type="text" id="cf-name" name="name" placeholder="Your full name" required>
+
+                    <label for="cf-email">Email</label>
+                    <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+
+                    <label for="cf-topic">Topic</label>
+                    <select id="cf-topic" name="topic">
+                        <option value="general">General enquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="careers">Careers</option>
+                    </select>
+
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" placeholder="How can we help?" required></textarea>
+
+                    <button type="submit" class="contact-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="footer-inner">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="#privacy">PRIVACY POLICY</a></li>
+                        <li><a href="#terms">TERMS & CONDITIONS</a></li>
+                        <li><a href="#reviews">REVIEWS</a></li>
+                        <li><a href="#refund">REFUND POLICY</a></li>
+                        <li><a href="#offers">OFFERS</a></li>
+                        <li><a href="#media">IN MEDIA</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Payment Methods</h4>
+                    <div class="payments">
+                        <span class="pay-icon">₹ CASH</span>
+                        <span class="pay-icon">MasterCard</span>
+                        <span class="pay-icon">G Pay</span>
+                        <span class="pay-icon">Paytm</span>
+                        <span class="pay-icon">VISA</span>
+                        <span class="pay-icon">UPI</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <p class="address-text">123 Shop, Galleria Market,<br>DLF Phase 4, Gurgaon</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p class="contact-line">&#9993; info@crustandco.com</p>
+                    <p class="contact-line">&#9742; 0124-404-8833</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-follow">
+                        <a href="#facebook" class="social-round">f</a>
+                        <a href="#instagram" class="social-round">in</a>
+                        <a href="#youtube" class="social-round">▶</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('burger-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('mobile-menu').classList.toggle('active');
+        });
+        
+        // Close menu when clicking a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
